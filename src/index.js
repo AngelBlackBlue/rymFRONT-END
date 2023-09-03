@@ -8,7 +8,8 @@ import { Provider } from 'react-redux'
 import axios from 'axios'
 
 // axios.defaults.baseURL = 'http://localhost:3001/rickandmorty';
-axios.defaults.baseURL = 'https://rymback-end-production.up.railway.app//rickandmorty';
+axios.defaults.baseURL = 'https://rymback-end-production.up.railway.app/rickandmorty';
+
 
 
 ReactDOM.render(
