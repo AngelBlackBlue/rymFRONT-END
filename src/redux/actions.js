@@ -7,7 +7,7 @@ export const addFav = (character, res) => {
     return async (dispatch) => {
 
         try {
-            const endpoint = '/fav';
+            const endpoint = '/rickandmorty/fav';
             let response = await axios.post(endpoint, character);
             console.log(response.data)
             return dispatch({
@@ -30,7 +30,7 @@ export const removeFav = (id, res) => {
 
         try {
 
-            const endpoint = '/fav/' + (+id);
+            const endpoint = '/rickandmorty/fav/' + (+id);
             const response = await axios.delete(endpoint);
 
             return dispatch({
