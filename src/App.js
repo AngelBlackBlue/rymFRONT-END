@@ -33,7 +33,7 @@ function App() {
 
       try {
 
-         let response = await axios(`/character/${id}`);
+         let response = await axios(`/rickandmorty/character/${id}`);
          setCharacters((oldChars) => [...oldChars, response.data])
 
       } catch (error) {
