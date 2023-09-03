@@ -33,7 +33,7 @@ function App() {
 
       try {
 
-         let response = await axios(`http://localhost:3001/rickandmorty/character/${id}`);
+         let response = await axios(`/character/${id}`);
          setCharacters((oldChars) => [...oldChars, response.data])
 
       } catch (error) {
@@ -74,9 +74,9 @@ function App() {
 
    }
 
-   // useEffect(() => {
-   //    !access && navigate('/');
-   // }, [access]);
+   useEffect(() => {
+      !access && navigate('/');
+   }, [access]);
 
    return (
 

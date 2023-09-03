@@ -7,9 +7,9 @@ export const addFav = (character, res) => {
     return async (dispatch) => {
 
         try {
-            const endpoint = 'http://localhost:3001/rickandmorty/fav';
+            const endpoint = '/fav';
             let response = await axios.post(endpoint, character);
-             console.log(response.data)
+            console.log(response.data)
             return dispatch({
                 type: ADD_FAV,
                 payload: response.data,
@@ -30,9 +30,9 @@ export const removeFav = (id, res) => {
 
         try {
 
-            const endpoint = 'http://localhost:3001/rickandmorty/fav/' + (+id);
+            const endpoint = '/fav/' + (+id);
             const response = await axios.delete(endpoint);
-            
+
             return dispatch({
                 type: REMOVE_FAV,
                 payload: response.data,
@@ -40,7 +40,7 @@ export const removeFav = (id, res) => {
 
 
         } catch (error) {
-                
+
             return res.status(500).send({ error: error.message })
 
         }
