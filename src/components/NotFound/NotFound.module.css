@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    /* Oculta la barra de desplazamiento */
+}
+
+.fondo {
+    background-image: url('../img/error404EscalaGris.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal; */
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../font/get_schwifty.ttf') format('truetype');
+}
+
+.text {
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+
+    filter: saturate(234%);
+    -webkit-filter: saturate(234%);
+    -moz-filter: saturate(234%);
+
+    font-family: 'MiFuentePersonalizada';
+    color: rgb(31, 222, 50, 0.75);
+    text-shadow: 4px 10px 3px rgba(0, 0, 0, 0.8);
+    font-size: 4rem;
+}
