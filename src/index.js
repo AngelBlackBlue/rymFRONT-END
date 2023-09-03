@@ -7,7 +7,7 @@ import store from './redux/store'
 import { Provider } from 'react-redux'
 import axios from 'axios'
 
-// axios.defaults.baseURL = 'http://localhost:3001/rickandmorty';
+// axios.defaults.baseURL = 'http://localhost:3001';
 axios.defaults.baseURL = 'https://rymback-end-production.up.railway.app';
 
 
