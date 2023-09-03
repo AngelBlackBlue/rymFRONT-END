@@ -7,13 +7,15 @@ import store from './redux/store'
 import { Provider } from 'react-redux'
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:3001/rickandmorty';
+// axios.defaults.baseURL = 'http://localhost:3001/rickandmorty';
+axios.defaults.baseURL = 'https://rymback-end-production.up.railway.app//rickandmorty';
+
 
 ReactDOM.render(
-  <Provider store={store}>
-     <BrowserRouter>
-        <App />
-     </BrowserRouter>
-  </Provider>,
-  document.getElementById('root')
+   <Provider store={store}>
+      <BrowserRouter>
+         <App />
+      </BrowserRouter>
+   </Provider>,
+   document.getElementById('root')
 )
